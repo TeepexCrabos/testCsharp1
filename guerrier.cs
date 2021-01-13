@@ -8,21 +8,15 @@ namespace testCsharp1
     {
         public Guerrier()
         {
-            int pv = 10;
-            int defense = 5;
-            int atk = 10; 
+         Pv = 100;
+         Atk = 20;
+            PvMax = 100;
         }
-        public override void Deplacement()
-        {
-
-        }
+       
          void IEpee.intimidation()
         {
             Console.WriteLine("le guerrier fait tourner son epée pour intimider son adversaire");
         }
-        public override void attaquer()
-        {
-            Console.WriteLine("le guerrier attaque");
-        }
+       
     }
 }

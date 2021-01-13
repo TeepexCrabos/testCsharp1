@@ -12,6 +12,7 @@ namespace testCsharp1
             name = "unknown";
             Pv = 100;
             Atk = 10;
+            PvMax = 100;
             
         }
 
@@ -25,16 +26,28 @@ namespace testCsharp1
         // Auto-implemented readonly property:
         public string name { get; set; }
         public int Pv { get; set; }
+        public int PvMax { get; set; }
         public int Atk { get; set; }
 
-        public virtual void Deplacement()
-        {
-            Console.WriteLine("le personnage avance");
-        }
         public virtual void attaquer() 
         {
             Console.WriteLine("le personnage attaque");
         }
+        public void Atk_plus(int valeur1) 
+        {
+            Atk = Atk + valeur1;
+        }
+        public void PvMax_Plus(int valeur2)
+        {
+            PvMax = PvMax + valeur2;
+        }
 
+        public void Pv_Plus(int valeur2)
+        {
+            PvMax_Plus(valeur2);
+            Pv = Pv + valeur2;
+        }
+
+        
     }
 }
