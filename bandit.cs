@@ -11,12 +11,6 @@ namespace testCsharp1
             Pv = Pv;
             Atk = Atk;
         }
-
-        public int Pv { get; set; }
-        public int Atk { get; set; }
-        public override void attaquer()
-        {
-           
-        }
+      
     }
 }

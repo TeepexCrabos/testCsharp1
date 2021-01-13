@@ -11,7 +11,7 @@ namespace testCsharp1
 
         }
 
-        public void heal(Personnage.perso)
+        public override void attaqueSpe(Personnage perso)
         {
             perso.Pv = perso.PvMax;
         }

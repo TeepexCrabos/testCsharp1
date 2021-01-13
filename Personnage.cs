@@ -29,9 +29,13 @@ namespace testCsharp1
         public int PvMax { get; set; }
         public int Atk { get; set; }
 
-        public virtual void attaquer() 
+        public void subirDegat(int valeur)
         {
-            Console.WriteLine("le personnage attaque");
+            this.Pv = this.Pv - valeur;
+        }
+        public virtual void attaquer(Personnage perso) 
+        {
+            perso.subirDegat(this.Atk);
         }
         public void Atk_plus(int valeur1) 
         {
@@ -47,6 +51,13 @@ namespace testCsharp1
             PvMax_Plus(valeur2);
             Pv = Pv + valeur2;
         }
+
+        public virtual void attaqueSpe(Personnage perso) 
+        { 
+            
+        }
+
+       
 
         
     }

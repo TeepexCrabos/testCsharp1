@@ -12,11 +12,11 @@ namespace testCsharp1
          Atk = 20;
             PvMax = 100;
         }
-       
-         void IEpee.intimidation()
+
+        public override void attaqueSpe(Personnage perso)
         {
-            Console.WriteLine("le guerrier fait tourner son epée pour intimider son adversaire");
+            perso.subirDegat(50);
         }
-       
+
     }
 }

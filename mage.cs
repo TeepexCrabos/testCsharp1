@@ -4,7 +4,7 @@ using System.Text;
 
 namespace testCsharp1
 {
-    class mage : Personnage , IBaton
+    class mage : Personnage
     {
         public mage()
         {
@@ -13,9 +13,10 @@ namespace testCsharp1
         PvMax = 80;
         }
 
-        void IBaton.fireBall()
+        public override void attaqueSpe(Personnage perso)
         {
-
+            perso.subirDegat(50);
         }
+       
     }
 }
