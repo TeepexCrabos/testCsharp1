@@ -13,7 +13,7 @@ namespace testCsharp1
 
         public void heal(Personnage.perso)
         {
-            perso.Pv = 
+            perso.Pv = perso.PvMax;
         }
     }
 }

@@ -13,16 +13,21 @@ namespace testCsharp1
             Console.WriteLine("avant toute chose choisie ta classe parmi ces 2 classe 1-Mage 2-Guerrier");
             string saisie = Console.ReadLine();
             int reponse = int.Parse(saisie);
+            Personnage perso;
             if (reponse == 1)
             {
-                Personnage perso = new mage();
+                perso = new mage();
             }
             else
             {
-                Personnage perso = new Guerrier();
+                perso = new Guerrier();
+                
             }
 
-            
+            while (perso.Pv > 0)
+            {
+
+            }
 
 
         }
