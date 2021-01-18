@@ -40,6 +40,7 @@ namespace testCsharp1
         public void Atk_plus(int valeur1) 
         {
             Atk = Atk + valeur1;
+
         }
         public void PvMax_Plus(int valeur2)
         {
@@ -53,7 +54,7 @@ namespace testCsharp1
         }
 
         public virtual void attaqueSpe(Personnage perso) 
-        { 
+        {
             
         }
 

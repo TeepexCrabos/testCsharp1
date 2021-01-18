@@ -8,10 +8,15 @@ namespace testCsharp1
     {
         public Piece()
         {
-            numero = 1;
+            numero = 0;
         }
        
         public int numero { get; set; }
+
+        public void piece_plus()
+        {
+            numero = numero + 1;
+        }
     }
 
 }

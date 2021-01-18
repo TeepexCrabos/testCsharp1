@@ -4,7 +4,7 @@ using System.Text;
 
 namespace testCsharp1
 {
-    class Guerrier : Personnage , IEpee
+    class Guerrier : Personnage
     {
         public Guerrier()
         {

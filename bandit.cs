@@ -11,6 +11,10 @@ namespace testCsharp1
             Pv = Pv;
             Atk = Atk;
         }
+        ~bandit()
+        {
+
+        }
       
     }
 }
