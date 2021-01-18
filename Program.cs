@@ -10,7 +10,7 @@ namespace testCsharp1
 
 
             Console.WriteLine("bonjour a toi aventurier");
-            Console.WriteLine("avant toute chose choisie ta classe parmis ces 2 classes 1-Mage 2-Guerrier");
+            Console.WriteLine("avant toute chose choisie ta classe parmis ces 2 classe 1-Mage 2-Guerrier");
             string saisie = Console.ReadLine();
             int reponse = int.Parse(saisie);
             Personnage perso;
@@ -42,14 +42,14 @@ namespace testCsharp1
                 }
                 else
                 {
-                    int coef = piece.numero * 100;
-                    gardien = new bandit(coef,coef);
+                    int coef = piece.numero * 1000;
+                    gardien = new bandit(aleatoire.Next(100, coef), aleatoire.Next(100, coef));
                     while (gardien.Pv > 0 && perso.Pv > 0)
                     {
                         Console.WriteLine("le bandit vous attaque");
                         gardien.attaquer(perso);
                         Console.WriteLine("il vous reste " + perso.Pv + " Pv");
-                        Console.WriteLine("vous attaquez");
+                       
                         int nb = aleatoire.Next(1, 5);
                         if (nb == 1 && perso.Pv > 0)
                         {
@@ -61,6 +61,7 @@ namespace testCsharp1
                         {
                             if (perso.Pv > 0)
                             {
+                                Console.WriteLine("vous attaquez");
                                 perso.attaquer(gardien);
                                 Console.WriteLine("il reste " + gardien.Pv + " Pv a l'ennemie");
                             }
@@ -76,7 +77,7 @@ namespace testCsharp1
                 }
                 
             }
-            Console.WriteLine("vous avez perdu");
+            Console.WriteLine("vous avez perdu vous etes arrivé a la piece "+piece.numero);
 
 
         }
