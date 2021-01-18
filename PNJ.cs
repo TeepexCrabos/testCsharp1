@@ -14,6 +14,7 @@ namespace testCsharp1
         public override void attaqueSpe(Personnage perso)
         {
             perso.Pv = perso.PvMax;
+            Console.WriteLine("le pnj vous a soigné");
         }
     }
 }
